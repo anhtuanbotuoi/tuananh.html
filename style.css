@@ -1,0 +1,233 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body và font chữ */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 14px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    border-color: #010101;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background: #644944;
+    color: rgb(255, 49, 49);
+    border-radius: 0 50px 50px 0;
+    font-size: 16px;
+    border: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 40px rgba(181, 110, 110, 0.2);
+}
+
+.search-button:hover {
+    background: #ffffff;
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    z-index: 699;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    transition: background 10s ease;
+    background: #f5f5f588;
+    color: rgb(0, 0, 0);
+}
+
+header .container {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.container {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* Khi di chuột vào menu item */
+
+.container nav li a:hover {
+    color: rgb(255, 0, 0);
+}
+
+header nav ul li {
+    margin: 0 10px;
+    transition: background 0.3s ease;
+    margin-bottom: 0;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Banner */
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    /* Màu chữ */
+}
+
+.banner-image img {
+    width: 100%;
+    height: 76%;
+    padding: 10px 20px;
+    border-radius: 5%;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    /* Đặt vị trí chữ giữa theo chiều dọc */
+    left: 50%;
+    /* Đặt vị trí chữ giữa theo chiều ngang */
+    transform: translate(-50%, -50%);
+    /* Giúp căn giữa chính xác */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Thêm bóng cho chữ để dễ đọc hơn */
+}
+
+.banner {
+    text-align: center;
+    background: #ffffff86;
+    color: rgb(255, 0, 98);
+    padding: 2rem 0;
+    font-size: 19px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Sản phẩm nổi bật */
+
+.featured-products {
+    padding: 2rem 0;
+    background: #fff;
+}
+
+.featured-products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    margin-bottom: 50px;
+}
+
+.featured-products .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.product-item .btn:hover {
+    background: #c52a6a;
+}
+
+.product-grid {
+    float: right;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #010101;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
